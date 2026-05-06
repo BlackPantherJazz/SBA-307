@@ -1,0 +1,95 @@
+/* GLOBAL STYLES */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+
+  /* RED ARTSY GRADIENT */
+  background: linear-gradient(135deg, #1a0000, #660000, #cc0000, #ff4d4d);
+  background-size: 300% 300%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* ANIMATION 1 */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+/* FLEXBOX NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SELECTOR + HOVER */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px;
+}
+
+/* TABLE */
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid white;
+  padding: 10px;
+}
+
+/* FORMS */
+form {
+  margin: 20px auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, select, button {
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+}
+
+/* ANIMATION 2 */
+button {
+  background-color: #ff1a1a;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+}
